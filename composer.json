@@ -3,9 +3,9 @@
     "psr-4": {
       "ishop\\": "vendor/ishop/core",
       "app\\": "app"
+    }
     },
     "require": {
-
+      "gabordemooij/redbean": "dev-master"
     }
-  }
 }

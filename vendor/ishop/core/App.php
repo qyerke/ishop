@@ -18,6 +18,8 @@ class App
         session_start();
         self::$app = Registry::instance();
         $this->getParams();
+        new ErrorHandler();
+        Router::dispatch($query);
     }
     protected function getParams(){
         $params = require_once CONF . '/params.php';
